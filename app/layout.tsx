@@ -21,7 +21,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Maza Halal Food | Chandler, AZ",
     description: "Authentic Mediterranean cuisine in Chandler, Arizona. Open daily 10am–6pm.",
-    type: "restaurant",
   },
 };
 
