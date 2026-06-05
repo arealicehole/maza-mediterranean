@@ -34,6 +34,8 @@ export default function ContactPage() {
                   <h3 className="font-semibold text-[#2C1810] mb-1">Hours</h3>
                   <p className="text-[#2C1810]/70">Open Daily: 10am – 6pm</p>
                 </div>
+              </div>
+            </div>
           </div>
 
           {/* Contact Form Column */}
