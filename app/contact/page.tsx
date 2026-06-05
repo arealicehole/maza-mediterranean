@@ -24,38 +24,16 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <div>
                   <h3 className="font-semibold text-[#2C1810] mb-1">Address</h3>
-                  <p className="text-[#2C1810]/70">1830 E Germann Rd<br />Chandler, AZ 85286</p>
+                  <p className="text-[#2C1810]/70">3491 W Frye Rd, Ste 2<br />Chandler, AZ 85226</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-[#2C1810] mb-1">Phone</h3>
-                  <p className="text-[#2C1810]/70">(480) 555-0192</p>
+                  <p className="text-[#2C1810]/70">(480) 534-6550</p>
                 </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <h2 className="font-serif text-2xl font-bold text-[#8B4513] mb-6">Hours</h2>
-              <div className="space-y-2 text-[#2C1810]/70">
-                <div className="flex justify-between">
-                  <span>Monday – Friday</span>
-                  <span className="font-medium text-[#2C1810]">11am – 9pm</span>
+                <div>
+                  <h3 className="font-semibold text-[#2C1810] mb-1">Hours</h3>
+                  <p className="text-[#2C1810]/70">Open Daily: 10am – 6pm</p>
                 </div>
-                <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span className="font-medium text-[#2C1810]">11am – 9pm</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span className="font-medium text-[#2C1810]">12pm – 8pm</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#F5E6D3] p-8 rounded-xl">
-              <p className="text-[#2C1810] text-sm">
-                <strong>Note:</strong> For large party reservations (8+ guests), please call us directly at <strong>(480) 555-0192</strong>. We're happy to accommodate special occasions!
-              </p>
-            </div>
           </div>
 
           {/* Contact Form Column */}

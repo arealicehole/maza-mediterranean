@@ -12,16 +12,15 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-[#D4A017] mb-4">Hours</h4>
             <div className="text-[#F5E6D3] space-y-1">
-              <p>Monday – Saturday: 11am – 9pm</p>
-              <p>Sunday: 12pm – 8pm</p>
+              <p>Open Daily: 10am – 6pm</p>
             </div>
           </div>
           <div>
             <h4 className="font-semibold text-[#D4A017] mb-4">Location</h4>
             <div className="text-[#F5E6D3] space-y-1">
-              <p>1830 E Germann Rd</p>
-              <p>Chandler, AZ 85286</p>
-              <p className="mt-2">(480) 555-0192</p>
+              <p>3491 W Frye Rd, Ste 2</p>
+              <p>Chandler, AZ 85226</p>
+              <p className="mt-2">(480) 534-6550</p>
             </div>
           </div>
         </div>
