@@ -3,49 +3,71 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <section className="relative bg-[#000000] flex items-center justify-center">
-        <div className="max-w-5xl mx-auto px-6 py-28 text-center">
-          <Image src="/logo.png" alt="Maza Mediterranean Cuisine logo" width={520} height={180} className="mx-auto mb-10" priority />
-          <p className="text-sm tracking-[0.35em] uppercase text-[#d4af37] mb-6">
-            Mediterranean Cuisine · Since 2011
+      {/* Hero */}
+      <section className="bg-[#0A1F1E] pt-20 pb-24 px-6">
+        <div className="max-w-5xl mx-auto text-center">
+          <div className="logo-lockup mb-6">
+            <span className="logo-wordmark">MAZA</span>
+            <span className="logo-subtitle">Mediterranean Cuisine</span>
+          </div>
+
+          <p className="text-2xl md:text-3xl text-[#F5F1E8] max-w-3xl mx-auto leading-tight mb-10">
+            Big portions. Real ingredients.<br />Honest prices.
           </p>
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Authentic recipes, warm hospitality, and generous portions. Family-owned in Chandler, AZ.
-          </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/menu"
-              className="inline-block bg-[#d4af37] text-[#000000] px-8 py-3 text-sm font-semibold tracking-wide hover:bg-white transition-colors"
+              className="inline-block bg-[#D3AB5E] hover:bg-[#A87C3D] text-[#0A1F1E] font-semibold px-10 py-4 rounded transition-colors text-lg tracking-wide"
             >
-              View full menu
+              View the Menu
             </Link>
             <Link
-              href="/about"
-              className="inline-block border border-[rgba(212,175,55,0.5)] text-[#d4af37] px-8 py-3 text-sm tracking-wide hover:border-[#d4af37] transition-colors"
+              href="/contact"
+              className="inline-block border-2 border-[#D3AB5E] text-[#D3AB5E] hover:bg-[#D3AB5E] hover:text-[#0A1F1E] font-semibold px-10 py-4 rounded transition-colors text-lg tracking-wide"
             >
-              Our story
+              Find Us
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#102a3a] border-y border-[rgba(212,175,55,0.2)]">
-        <div className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-10 text-center">
-          <div>
-            <p className="text-xs tracking-[0.3em] uppercase text-[#d4af37] mb-3">Est. 2011</p>
-            <p className="text-white font-semibold">Family owned & operated</p>
-            <p className="text-sm text-[#a0a0a0] mt-2">14 years of authentic Mediterranean cooking in Chandler</p>
-          </div>
-          <div>
-            <p className="text-xs tracking-[0.3em] uppercase text-[#d4af37] mb-3">In-house kitchen</p>
-            <p className="text-white font-semibold">Made fresh daily</p>
-            <p className="text-sm text-[#a0a0a0] mt-2">No pre-processed mixes — real prep, real flavor</p>
-          </div>
-          <div>
-            <p className="text-xs tracking-[0.3em] uppercase text-[#d4af37] mb-3">Open daily</p>
-            <p className="text-white font-semibold">10am – 8pm</p>
-            <p className="text-sm text-[#a0a0a0] mt-2">Lunch and dinner · Dine-in or takeout</p>
-          </div>
+      {/* Highlights */}
+      <section className="bg-[#0E0E0E] py-20 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+          {[
+            {
+              title: "Made In-House",
+              text: "Everything from our marinades to our sauces is made fresh daily. No shortcuts.",
+            },
+            {
+              title: "Generous Portions",
+              text: "Plates come with two kebabs, rice, salad, hummus, and tahini. You leave full.",
+            },
+            {
+              title: "Real Ingredients",
+              text: "Quality olive oil, fresh spices, and real food — never frozen, never processed.",
+            },
+          ].map((item, i) => (
+            <div key={i} className="card p-8 rounded-lg text-center">
+              <h3 className="font-display text-2xl text-[#D3AB5E] mb-4 tracking-wide">{item.title}</h3>
+              <p className="text-[#F5F1E8]/80">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="bg-[#0A1F1E] py-20 px-6 text-center">
+        <div className="max-w-xl mx-auto">
+          <h2 className="font-display text-4xl text-[#D3AB5E] tracking-wide mb-4">Open Daily, 10am–8pm</h2>
+          <p className="text-[#F5F1E8]/80 mb-8 text-lg">Dine in or grab it to go. We’re here every day.</p>
+          <Link
+            href="/menu"
+            className="inline-block bg-[#D3AB5E] hover:bg-[#A87C3D] text-[#0A1F1E] font-semibold px-10 py-4 rounded text-lg tracking-wide"
+          >
+            See the Full Menu
+          </Link>
         </div>
       </section>
     </div>
