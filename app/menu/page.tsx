@@ -59,6 +59,26 @@ export default function MenuPage() {
         <div className="mt-16 bg-[#0E0E0E] p-8 rounded-lg border border-[rgba(211,171,94,0.15)] text-center">
           <p className="text-[#F5F1E8]">
             <strong className="text-[#D3AB5E]">Note:</strong> All plates come with 2 kebabs unless otherwise noted, rice, salad, hummus + tahini. Please inform us of any allergies.
+        </div>
+
+        <div className="mt-12 text-center">
+          <a 
+            href="tel:4805346550" 
+            className="inline-block px-8 py-4 bg-[#D3AB5E] text-[#0A1F1E] font-semibold rounded-lg hover:bg-[#C49A4D] transition-colors text-lg"
+          >
+            Call to Order: (480) 534-6550
+          </a>
+        </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <a 
+            href="tel:4805346550" 
+            className="inline-block px-8 py-4 bg-[#D3AB5E] text-[#0A1F1E] font-semibold rounded-lg hover:bg-[#C49A4D] transition-colors text-lg"
+          >
+            Call to Order: (480) 534-6550
+          </a>
+        </div>
           </p>
         </div>
       </div>

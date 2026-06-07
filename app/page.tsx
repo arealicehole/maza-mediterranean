@@ -67,6 +67,12 @@ export default function Home() {
             className="inline-block bg-[#D3AB5E] hover:bg-[#A87C3D] text-[#0A1F1E] font-semibold px-10 py-4 rounded text-lg tracking-wide"
           >
             See the Full Menu
+          <a 
+            href="tel:4805346550" 
+            className="ml-4 inline-block border border-[#D3AB5E] text-[#D3AB5E] font-semibold px-10 py-4 rounded text-lg tracking-wide hover:bg-[#D3AB5E] hover:text-[#0A1F1E] transition-colors"
+          >
+            Call to Order
+          </a>
           </Link>
         </div>
       </section>
