@@ -54,6 +54,14 @@ export default function RootLayout({
               },
               telephone: "(480) 534-6550",
               openingHours: "Mo-Su 10:00-20:00",
+              openingHoursSpecification: [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                  opens: "10:00",
+                  closes: "20:00",
+                },
+              ],
               url: "https://mazahalalfood.com",
               image: "https://mazahalalfood.com/maza_ornate_logo.webp",
               priceRange: "$$",
