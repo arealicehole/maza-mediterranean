@@ -40,21 +40,30 @@ export default function MenuPage() {
                 {section.items.map((item) => (
                   <div
                     key={item.name}
-                    className="bg-[#0E0E0E] p-6 rounded-lg border border-[rgba(211,171,94,0.15)] hover:border-[rgba(211,171,94,0.35)] transition-colors duration-200"
+                    className="bg-[#0E0E0E] rounded-lg border border-[rgba(211,171,94,0.15)] hover:border-[rgba(211,171,94,0.35)] transition-colors duration-200 overflow-hidden"
                   >
-                    <div className="flex justify-between items-start mb-2">
-                      <h3 className="font-display text-lg text-[#F5F1E8] tracking-wide">{item.name}</h3>
-                      <span className="text-[#D3AB5E] font-bold text-lg ml-4">{item.price}</span>
-                    {item.description && (
-                      <p className="text-[#B8B8B8] text-sm mt-1 mb-2">{item.description}</p>
+                    {item.image && (
+                      <img 
+                        src={item.image} 
+                        alt={item.name} 
+                        className="w-full h-48 object-cover" 
+                      />
                     )}
+                    <div className="p-6">
+                      <div className="flex justify-between items-start mb-2">
+                        <h3 className="font-display text-lg text-[#F5F1E8] tracking-wide">{item.name}</h3>
+                        <span className="text-[#D3AB5E] font-bold text-lg ml-4">{item.price}</span>
+                      </div>
+                      {item.description && (
+                        <p className="text-[#B8B8B8] text-sm mb-3">{item.description}</p>
+                      )}
+                      {item.note && (
+                        <p className="text-[#B8B8B8] text-sm italic">{item.note}</p>
+                      )}
+                      {item.notes && item.notes.map((note, i) => (
+                        <p key={i} className="text-[#B8B8B8] text-sm">{note}</p>
+                      ))}
                     </div>
-                    {item.note && (
-                      <p className="text-[#B8B8B8] text-sm italic">{item.note}</p>
-                    )}
-                    {item.notes && item.notes.map((note, i) => (
-                      <p key={i} className="text-[#B8B8B8] text-sm">{note}</p>
-                    ))}
                   </div>
                 ))}
               </div>
