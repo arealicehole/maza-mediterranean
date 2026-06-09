@@ -1,13 +1,13 @@
 const galleryImages = [
-  { src: "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&h=400&fit=crop", alt: "Lamb shawarma plate" },
-  { src: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&h=400&fit=crop", alt: "Fresh Mediterranean salad" },
-  { src: "https://images.unsplash.com/photo-1565299624946-b28d40f0d6d8?w=600&h=400&fit=crop", alt: "Grilled kebabs" },
-  { src: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=400&fit=crop", alt: "Falafel plate" },
-  { src: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=400&fit=crop", alt: "Freshly baked pita" },
-  { src: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&h=400&fit=crop", alt: "Hummus and tahini" },
-  { src: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop", alt: "Restaurant interior" },
-  { src: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&h=400&fit=crop", alt: "Chicken shish kebab" },
-  { src: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600&h=400&fit=crop", alt: "Mediterranean platter" },
+  { src: "/images/maza/menu/opt-PXL_20260607_180708446.jpg", alt: "Mixed grill platter with kofta, chicken, and saffron rice" },
+  { src: "/images/maza/menu/opt-PXL_20260601_224012118.jpg", alt: "Mediterranean plate with hummus, falafel, tabbouleh, and Israeli salad" },
+  { src: "/images/maza/menu/opt-Jun_6_2026_5_29_23.jpg", alt: "Mixed grill platter with chicken, Merguez, and beef chunks" },
+  { src: "/images/maza/menu/opt-PXL_20260606_223538010.jpg", alt: "Burger with crinkle-cut fries" },
+  { src: "/images/maza/opt-PXL_20260607_012014666.jpg", alt: "MAZA restaurant interior with vertical sign" },
+  { src: "/images/maza/opt-PXL_20260607_012032976.jpg", alt: "Bright dining area with open kitchen and mural" },
+  { src: "/images/maza/opt-PXL_20260601_232702080.jpg", alt: "Commercial kitchen with vertical broilers" },
+  { src: "/images/maza/opt-PXL_20260605_212253975.jpg", alt: "Shawarma rotisserie in action" },
+  { src: "/images/maza/opt-PXL_20260607_180609260.jpg", alt: "Kofta and chicken skewer prep in hotel pan" },
 ];
 
 const imageObjects = galleryImages.map((img, index) => ({
@@ -16,8 +16,8 @@ const imageObjects = galleryImages.map((img, index) => ({
   "url": img.src,
   "name": img.alt,
   "description": img.alt,
-  "width": 600,
-  "height": 400,
+  "width": 1200,
+  "height": 800,
   "encodingFormat": "image/jpeg",
 }));
 
